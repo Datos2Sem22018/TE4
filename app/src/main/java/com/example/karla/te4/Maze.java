@@ -1,8 +1,13 @@
 package com.example.karla.te4;
 
+//import static com.example.karla.te4.MainActivity.txtMazeSetText;
+
+import static com.example.karla.te4.MainActivity.txtMazeSetText;
+
 public class Maze {
     public int counter = 0;
     public char[][] maze;
+
 
     public Maze(char[][] maze) {
         this.maze = maze;
@@ -33,6 +38,7 @@ public class Maze {
         counter++;
 
         System.out.println(this.toString());
+        txtMazeSetText(this.toString());
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {

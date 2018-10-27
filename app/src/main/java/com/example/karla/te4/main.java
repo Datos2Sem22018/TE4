@@ -2,7 +2,9 @@ package com.example.karla.te4;
 
 public class main {
 
-    public static void  main (String [] args){
+
+
+    public static void  main(String [] args){
 
         char maze [][] =
 
@@ -21,10 +23,9 @@ public class main {
         while (m.solve()!=false){
             limpiarMatriz(maze);
             m = new Maze(agregueDos(maze));
+
+
         }
-
-
-
 
     }
     public static char[][] agregueDos(char[][] maze){
@@ -49,4 +50,7 @@ public class main {
         }
         return maze;
     }
+
+
+
 }
